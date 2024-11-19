@@ -19,7 +19,7 @@ class LoginPage {
     forgetPassEmailFieldLocator = 'input[name="email"]';
     forgetPasswordPageSubmitButtonLocator = 'button[aria-label="Submit"][type="submit"]';
     forgetPasswordPageCancelButtonLocator = 'button[aria-label="Cancel"]';
-    
+    //anees
     navigateToLoginPage(url) {
         cy.visit(url);
     }
