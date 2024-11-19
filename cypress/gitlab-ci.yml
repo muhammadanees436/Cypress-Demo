@@ -1,0 +1,17 @@
+stages:
+  - test
+
+cypress-tests:
+  stage: test
+  image: cypress/base:18.16.0
+  script:
+    - npm install
+    - npx cypress run
+  artifacts:
+    when: always
+    paths:
+      - cypress/screenshots/
+      - cypress/videos/
+      - cypress/reports/
+  only:
+    - main
